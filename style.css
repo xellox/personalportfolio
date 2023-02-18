@@ -196,7 +196,7 @@ i:hover {
 /* About me content */
 .timeline {
     width: fit-content;
-    margin:200px 0 0 0;
+    margin:13% 0 0 1%;
 }
 
 .contentinline {
@@ -334,43 +334,37 @@ i:hover {
     /* SKILLS PAGE */
 
 .skillscontent{
-    position:relative;
-    display:flex;
-    top:200px;
-    left:150px;
-    width:fit-content;
-    height: fit-content;
+    position: relative;
+    margin:225px 0 0 10%;
 }
 
+
+
 .skillsheader{
+    display:flex;
+    position:relative;
+    margin:0 0 50px 0;
     font-size: 45px;
     color:rgb(0, 255, 183);
     letter-spacing: 1px;
-    line-height: 45px;
     text-transform:uppercase;
     pointer-events: none;
 }
 
 
 .sign {
-    display:inline;
     color:rgb(255, 0, 106);
 }
 
 .skillsheader::after{
     content: ".";
     color:rgb(255, 0, 106);
-    line-height: 45px;
-    font-size: 45px;
     margin-left:3px;
 }
 
 .skillstext{
     display:flex;
-    position:relative;
-    top:130px;
-    right: 285px;
-    width:600px;
+    max-width:700px;
     color:white;
     letter-spacing: 2px;
     line-height: 22px;
@@ -378,11 +372,12 @@ i:hover {
 
 .gradientbackground{
     background: rgb(14,14,14);
-    background: linear-gradient(90deg, rgba(14,14,14,1) 23%, rgba(0,32,78,1) 59%, rgba(3,84,107,1) 100%);  
-    width:100%;
-    height:100%;
+    background: linear-gradient(160deg, rgba(14,14,14,1) 23%, rgba(0, 33, 78, 0.534) 59%, rgb(3, 85, 107) 100%);  
+    width:100vw;
+    height:100vh;
     position:fixed;
     top:0;
+    left:0;
     z-index:-1;
 }
 
@@ -392,6 +387,7 @@ i:hover {
     width:5px;
     border-radius: 50px;
     height:500px;
+    margin-top: -200px;;
     background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209, 247, 241, 0.734) 0%, rgba(249, 213, 213, 0.778) 81% );
     left:1100px;
     box-shadow: 0px 0px 15px 7px rgb(255, 0, 106) ;
@@ -416,13 +412,13 @@ i:hover {
 
     75%{
         rotate:270deg;
-        margin-top:0;
+        margin-top:-200px;
         margin-left:0;
     }
 
     100% {
         rotate: 359deg;
-        margin-top:50px;
+        margin-top:-300px;
         margin-left:100px;
     }
 
@@ -613,9 +609,9 @@ a{
 .contentform{
     display:flex;
     position:relative;
-    width:600px;
-    top:200px;
-    left:150px;
+    max-width:600px;
+    margin: 12% 0 0 10%;
+    
 }
 
 form {
@@ -785,6 +781,7 @@ textarea:valid~label{
 
 .timegraph{
     min-width:300px;
+    transform: scale(1.1)
 }
 
 .timeline1 {
@@ -851,23 +848,60 @@ textarea:valid~label{
     letter-spacing: 1px;
     margin:auto;
 }
+/* SKILLS PAGE */
+.neon{
+    animation:none;
+    rotate:135deg;
+    top:0px;
+    left: 200px;
+}
+.skillstext{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    
+}
+.skillsheader{
+font-size: 30px;
+margin-bottom: 20px;
+}
+.skillscontent{
+   margin:100px auto;
+   max-width:315px;
+}
+/* contact page */
+.contentform{
+    top:100px;
+}
+.formheader{
+    font-size: 25px;
 }
 
+label{
+    font-size: 12px;
+}
 
+.submitbtn{
+    font-size: 12px;
+}
+.contactdirectly{
+    font-size: 14px;
+}
+
+}
 
 
 @media (max-width:600px) and (min-height:801px) and (max-height:1000px)
 
 {   
-    .text{
+.text{
         margin-top:165px;
         transform: scale(1.15);
     }
 
-    .navbar{
+.navbar{
         font-size: 22px;
         gap:30px;
-
         height: 50px;
         width:100%;
     }
@@ -879,4 +913,14 @@ textarea:valid~label{
 .timegraph {
     transform:scale(1.14)
 }
+
+.skillscontent{
+    transform: scale(1.15);
+    top:40px;
+}
+.neon{
+    left:350px;
+    top:100px;
+}
+
 }
