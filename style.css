@@ -887,7 +887,14 @@ label{
 .contactdirectly{
     font-size: 14px;
 }
+.grid-containerp{
+    grid-template-columns: auto;
+    margin:100px auto auto auto
+}
 
+.prjhead{
+    margin:auto;
+}
 }
 
 
