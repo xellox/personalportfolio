@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korpas Darius</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dcd8502bec.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Explora&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+    <nav class="navbar">
+      <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      <a href="about.html"><i class="fa-solid fa-user"></i></a>
+      <a href="skills.html"><i class="fa-solid fa-gear"></i></a>
+      <a href="projects.html"><i class="fa-regular fa-eye"></i></a>
+      <a href="contact.html"><i class="fa-regular fa-envelope"></i></a>
+    </nav>
+
+    <div class="contentform">
+        <h1 class="formheader">Write me an email!</h1>
+      <form onsubmit="sendEmail(); reset(); return false;" >
+
+        <div class="rowcontact">
+
+
+        <div class="input-group">
+          <input type="text" id="name" required>
+          <label for="name"><i class="fa-regular fa-address-card contacticon"></i>Your name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="email" required>
+          <label for="email"><i class="fa-regular fa-envelope contacticon"></i>Email Id</label>
+        </div>
+
+
+        </div>
+
+
+        <div class="input-group">
+          <input type="text" id="social" required>
+          <label for="social"><i class="fa-brands fa-linkedin contacticon"></i>Social (e.g. linkedin, facebook)</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" cols="30" rows="8" required></textarea>
+          <label  for="message"><i class="fa-regular fa-comments contacticon"></i>Your message</label>
+        </div>
+
+        <button class='submitbtn' type="submit"> SUBMIT</button>
+        
+
+      </form>
+
+      <div class="contactdirectly">
+      <p> Or contact me directly on: &nbsp </p>
+      <a href="https://www.linkedin.com/in/korpas-darius-949019258/"><i id ='directly' class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+<script src="java.js"></script>
+</body>
+</html>
