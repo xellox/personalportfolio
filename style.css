@@ -67,6 +67,15 @@ i:target{
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+}
+a:target{
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
     /* Contact me button */
 .contact {
     color:rgb(245, 236, 236);   
