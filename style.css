@@ -433,9 +433,9 @@ i:hover {
     overflow-x:hidden;
     top:100px;
     display:block;
-    position:absolute !important;
+    position:absolute;
     animation-name: "enlarge";
-    animation-duration: 0.2s;
+    animation-duration: 220ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     background-color: #111;
@@ -471,7 +471,7 @@ i:hover {
     left:0px;
     z-index: 1  ;
     animation-name: "enlarge";
-    animation-duration: 0.2s;
+    animation-duration: 220ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }
