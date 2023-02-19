@@ -14,6 +14,13 @@ body{
 main{
     display:block;
 }
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 
     /* TRANSITION FOR PAGES */
 .transition {
@@ -63,26 +70,7 @@ i:hover {
     color:rgb(0, 255, 183);
     text-decoration: none;
 }
-i:target{
-    text-decoration: none;
-}
 
-a{
-    text-decoration: none;
-}
-a:target{
-    text-decoration: none;
-}
-a:active {
-    text-decoration: none;
-}
-input,
-textarea,
-button,
-select,
-a {
-    -webkit-tap-highlight-color: transparent;
-}
     /* Contact me button */
 .contact {
     color:rgb(245, 236, 236);   
@@ -449,6 +437,7 @@ a {
     animation-name: "enlarge";
     animation-duration: 0.2s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in;
     background-color: #111;
     scrollbar-color: rgb(255, 0, 106) #333;
     scrollbar-width: thin;
@@ -484,11 +473,12 @@ a {
     animation-name: "enlarge";
     animation-duration: 0.2s;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 
 @keyframes enlarge {
     0% {
-        opacity:0;
+        opacity: 0;
     }
 
     100% {
