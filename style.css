@@ -825,8 +825,8 @@ textarea:valid~label{
     .neon{
         animation:none;
         transform: rotate(135deg);
-        top:0px;
-        left: 200px;
+        top:-100px;
+        left:280px;
         
     }
     .skillstext{
@@ -906,8 +906,8 @@ textarea:valid~label{
         top:40px;
     }
     .neon{
-        left:300px;
-        top:90px;
+        left:350px;
+        top:-50px;
     }
 
 }
