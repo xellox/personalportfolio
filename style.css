@@ -178,7 +178,7 @@ i:hover {
 /* TIMELINE TEXT BOX */
 .timeline {
     width: fit-content;
-    margin:13% 0 0 1%;
+    margin:200px 0 0 10%;
 }
 
 .contentinline {
@@ -188,30 +188,31 @@ i:hover {
 
 #clock{
     color:rgb(232, 232, 232);
-    font-size: 20px;
+    font-size: 27px;
     display:inline-flex;
     position:relative;
-    margin:3px 0 0 10px;
+    margin:11px 0 0 10px;
     width:fit-content;
 
 }
 
 .timelinetext {
-    font-size:18px;
+    font-size:32px;
     display:flex;
     position:relative;
     letter-spacing: 2px;
-    margin:0 0 0 120px;
     color: turquoise;
 }
 
 .timelinetextcontent {
-    font-size:14px;
-    max-width:600px;
+    font-size:18px;
+    line-height: 22px;
+    max-width: 750px;
     display:flex;
     position:relative;
     letter-spacing: 2px;
-    margin:10px 0 0 120px;
+    margin-top:30px;
+    margin-bottom:30px;
     color: rgb(255, 255, 255);
 }
 
@@ -219,9 +220,7 @@ i:hover {
 
 .timegraph{
     display:flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    position: relative ;
     min-width:590px;
     top:100px;
     user-select: none;
@@ -311,10 +310,11 @@ i:hover {
 
 .skillstext{
     display:flex;
-    max-width:700px;
+    max-width:750px;
     color:white;
     letter-spacing: 2px;
     line-height: 22px;
+    font-size:18px;
 }
 
 
@@ -342,7 +342,7 @@ i:hover {
 /* gradient bg */
 .gradientbackground{
     background: rgb(14,14,14);
-    background: linear-gradient(160deg, rgba(14,14,14,1) 23%, rgba(0, 33, 78, 0.534) 59%, rgb(3, 85, 107) 100%);  
+    background: linear-gradient(160deg, rgb(11, 10, 10) 23%, rgba(0, 33, 78, 0.534) 59%, rgb(3, 85, 107) 100%);  
     width:100vw;
     height:100vh;
     position:fixed;
@@ -761,9 +761,10 @@ textarea:valid~label{
 
     .timegraph{
         min-width:300px;
-        transform: scale(1.1)
+        transform: scale(1.1);
+        left:13px;
     }
-
+    
     .tim{
         font-size:11px;
         width:90px;
@@ -802,24 +803,25 @@ textarea:valid~label{
     /* About me content */
 
     .timeline {
-            margin:120px auto;
+         margin:120px auto;
         }
 
     #clock{
-        font-size: 18px;    
+        font-size: 23px; 
+        margin:7px 0 0 8px;   
     }
 
 
     .timelinetext {
-        font-size:16px;
+        font-size:25px;
         margin:auto; 
     }
 
     .timelinetextcontent {
-        font-size:12px;
-        max-width:300px;
+        font-size:13px;
+        max-width:310px;
         letter-spacing: 1px;
-        margin:auto;
+        margin:30px auto auto auto;
     }
     /* SKILLS PAGE */
     .neon{
@@ -830,8 +832,7 @@ textarea:valid~label{
         
     }
     .skillstext{
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 13px;
         letter-spacing: 1px;
         
     }
@@ -841,7 +842,7 @@ textarea:valid~label{
     }
     .skillscontent{
     margin:100px auto;
-    max-width:315px;
+    max-width:310px;
     }
     /* contact page */
     .contentform{
@@ -872,9 +873,9 @@ textarea:valid~label{
     }
     
     .contentbox{
-        transform: scale(0.8);
+        transform: scale(0.7);
         top:50px;
-    }
+    }   
 }
 
 @media (max-width:600px) and (min-height:801px) and (max-height:1000px)
@@ -900,7 +901,7 @@ textarea:valid~label{
     .timegraph {
         transform:scale(1.14)
     }
-
+    /* SKILLS CONTENT*/
     .skillscontent{
         transform: scale(1.15);
         top:40px;
@@ -909,6 +910,11 @@ textarea:valid~label{
         left:350px;
         top:-50px;
     }
+
+    /*modal box bigger */
+    .contentbox{
+        transform: scale(0.8);
+    }   
 
 }
 
