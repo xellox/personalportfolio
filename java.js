@@ -34,7 +34,7 @@ function sendEmail(){
         Subject : "Email via personal website from " + email.value,
         Body : ebody
     }).then(
-      message => alert(message)
+      message => alert('It worked! i have to change this alert tho...')
     );
 
     }
