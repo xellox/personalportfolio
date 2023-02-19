@@ -5,7 +5,7 @@ const social = document.getElementById('social');
 const message = document.getElementById('message');
 
 function showDiv() {
-    show.style.display = 'block';
+    show.style.display = 'flex';
  }
 
 function closeDiv() {
