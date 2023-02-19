@@ -442,6 +442,7 @@ i:hover {
 
 .grid-containerp {
     display:grid;
+    position: relative;
     align-items: center;
     justify-content: center;
     grid-template-columns:auto auto auto auto auto;
@@ -453,42 +454,44 @@ i:hover {
 
 .grid-itemp {
      background-color: rgb(33, 33, 33);
-     width:250px;
+     min-width:250px;
      height: 300px;
-     display:flex;
-     position:relative;
      border:1px solid rgb(18, 18, 18);
      border-radius: 4px;
      box-shadow: 10px 10px 10px 0px rgb(2, 2, 2);
 }
 
 /* Containers content pop up */
-
-#contentDiv {
+.contentbox{
     width:450px;
     height:550px;
-    background-color: #111;
-    position:relative;
-    margin:-620px auto auto 565px;
     overflow: scroll;
+    top:100px;
+    position:absolute;
     animation-name: "enlarge";
     animation-duration: 0.2s;
     animation-iteration-count: 1;
+    background-color: #111;
     scrollbar-color: rgb(255, 0, 106) #333;
     scrollbar-width: thin;
     border:1px solid rgb(1, 1, 1);
-    z-index:1;
-    display:none;
+    z-index:2;
+}
+#contentDiv {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .greybg {
     position:fixed;
     width:100%;
     height:100%;
-    background-color: #00000099;
+    background-color: #84030399;
     top:0px;
     left:0px;
-    z-index: -1;
+    z-index: 1;
     animation-name: "enlarge";
     animation-duration: 0.2s;
     animation-iteration-count: 1;
@@ -854,6 +857,7 @@ textarea:valid~label{
     transform: rotate(135deg);
     top:0px;
     left: 200px;
+    
 }
 .skillstext{
     font-size: 14px;
@@ -888,13 +892,13 @@ label{
     font-size: 14px;
 }
 .grid-containerp{
-    grid-template-columns: auto;
-    margin:25px auto auto auto
+    margin:auto;
 }
 
 .prjhead{
     margin:100px auto auto auto;
 }
+
 }
 
 
@@ -926,11 +930,34 @@ label{
     top:40px;
 }
 .neon{
-    left:350px;
-    top:100px;
-    
+    left:300px;
+    top:90px;
+
+}
+
 }
 
 
+@media (max-width:1440px) {
+    .grid-containerp{
+        grid-template-columns: auto auto auto auto  ;
+    }
+}
 
+@media (max-width:1150px) {
+    .grid-containerp{
+        grid-template-columns: auto auto auto   ;
+    }
+}
+
+@media (max-width:870px) {
+    .grid-containerp{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:600px) {
+    .grid-containerp{
+        grid-template-columns: auto;
+    }
 }
