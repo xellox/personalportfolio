@@ -27,10 +27,13 @@
     </nav>
 
 <div class="transition">
-    <h1 class ="prjhead">Projects</h1>
+    <div class="projectTitle">
+        <h1 class ="prjhead">Projects</h1>
+        <a href="https://github.com/xellox" target="_blank" class="fa-brands fa-github"></i></a>
+    </div>  
     <div class="grid-containerp">
         <a href="#"><div class="grid-itemp first-grid" onclick="showDiv()"><p class="dark">Dog website</p></div></a>
-        <a href="#"><div class="grid-itemp"></div></a>
+        <a href="#"><div class="grid-itemp second-grid" onclick="showDiv2()"><p class="dark">To-do app</p></div></a>
         <a href="#"><div class="grid-itemp"></div></a>
         <a href="#"><div class="grid-itemp"></div></a>
         <a href="#"><div class="grid-itemp"></div></a>
@@ -42,14 +45,25 @@
     </div>
 </div>
 
-<div id="contentDiv">
+<div id="firstContentDiv">
     <div class="contentbox">
-        <p class="contentText">&nbsp&nbsp&nbsp This is my first completed website, a simple adoption page for dogs.<br><br>&nbsp&nbsp&nbsp I learned how to use icons, centering the page elements, adding some hover effects, and little animations. </p>
-        <div class="contentImage"></div>
+        <p class="contentText1">&nbsp&nbsp&nbsp This is my first completed website, a simple adoption page for dogs.<br><br>&nbsp&nbsp&nbsp I learned how to use icons, centering the page elements, adding some hover effects, and little animations. </p>
+        <div class="contentImage1"></div>
         <a href="#"><div class="closebutton" onclick="closeDiv()">+</div></a>
     </div>
         <div class="greybg"></div>
 </div>
+
+<div id="secondContentDiv">
+    <div class="contentbox">
+        <p class="contentText2">&nbsp&nbsp&nbsp My second project, a to-do list, this one, as well as the following, is and are gonna be focused on javascript / js frameworks.<br><br>&nbsp&nbsp&nbsp My purpose with this projects is to have a solid basis of javascript and whats behind it. <br><br> &nbsp&nbsp&nbsp Here is a preview of it as well as the website: <a href="https://xellox.github.io/to-do-app/" target="_blank"> https://xellox.github.io/to-do-app/</a></p>
+        <div class="contentImage2"></div>
+        <a href="#"><div class="closebutton" onclick="closeDiv2()">+</div></a>
+    </div>
+        <div class="greybg"></div>
+</div>
+
+
 
 <script src="java.js"></script>
 </body>
