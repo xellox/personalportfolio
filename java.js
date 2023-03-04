@@ -1,5 +1,6 @@
 const show = document.getElementById('firstContentDiv');
 const show2 = document.getElementById('secondContentDiv')
+const show3 = document.getElementById('thirdContentDiv')
 const fname = document.getElementById('name');
 const email = document.getElementById('email');
 const social = document.getElementById('social');
@@ -19,6 +20,14 @@ function showDiv2() {
 
  function closeDiv2() {
     show2.style.display = 'none';
+}
+
+function showDiv3() {
+    show3.style.display = 'flex';
+ }
+
+ function closeDiv3() {
+    show3.style.display = 'none';
 }
 
 

@@ -483,6 +483,13 @@ i:hover {
     align-items: center;
 }
 
+#thirdContentDiv{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .greybg {
     position:fixed;
     width:100%;
@@ -507,7 +514,7 @@ i:hover {
     }
 }
 
-.contentText1, .contentText2 {
+.contentText1, .contentText2, .contentText3 {
     letter-spacing: 2px;
     font-size: 17px;
     margin:15px 0 0 0;
@@ -519,22 +526,12 @@ i:hover {
     height:120%;
     display:flex;
     position:relative;
-    margin:auto auto 77px auto;
+    margin:auto auto 80px auto;
     top:40px;
     background-image: url('dog-site-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border:1px solid black;
-}
-
-.contentImage1:hover, .contentImage2:hover {
-    transform:scale(1.08);
-    transition: all 0.15s ease-in-out;
-}
-
-.contentImage1:not(:hover), .contentImage2:not(:hover){
-    transform:scale(1);
-    transition: all 0.15s ease-in-out;
 }
 
 .contentImage2{
@@ -543,13 +540,34 @@ i:hover {
     height:390px;
     display:flex;
     position:relative;
-    margin:auto auto 60px auto;
+    margin:auto auto 80px auto;
+    top:40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:1px solid black;
+}
+.contentImage3{
+    background-image: url('weatherapp2.jpg');
+    width:390px;
+    height:450px;
+    display:flex;
+    position:relative;
+    margin:auto auto 80px auto;
     top:40px;
     background-repeat: no-repeat;
     background-size: cover;
     border:1px solid black;
 }
 
+.contentImage1:hover, .contentImage2:hover, .contentImage3:hover {
+    transform:scale(1.08);
+    transition: all 0.15s ease-in-out;
+}
+
+.contentImage1:not(:hover), .contentImage2:not(:hover), .contentImage3:not(:hover){
+    transform:scale(1);
+    transition: all 0.15s ease-in-out;
+}
 
 /*close pop up button */
 .closebutton {
@@ -584,6 +602,13 @@ i:hover {
     background-position: center;
     background-repeat: no-repeat;
     
+}
+
+.third-grid{
+    background-image: url('weatherapp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .grid-itemp:hover {
@@ -847,6 +872,7 @@ textarea:valid~label{
 
     .timeline {
          margin:120px auto;
+         max-width: 310px;
         }
 
     #clock{
@@ -877,7 +903,7 @@ textarea:valid~label{
     .skillstext{
         font-size: 13px;
         letter-spacing: 1px;
-        
+
     }
     .skillsheader{
     font-size: 30px;
@@ -892,7 +918,8 @@ textarea:valid~label{
         top:100px;
     }
     .formheader{
-        font-size: 25px;
+        font-size: 23px;
+        top:-70px;
     }
 
     label{
@@ -916,8 +943,8 @@ textarea:valid~label{
     }
     
     .contentbox{
-        transform: scale(0.7);
-        top:50px;
+        transform: scale(0.6);
+        top:20px;
     }   
 }
 
@@ -942,11 +969,10 @@ textarea:valid~label{
         transform:scale(1.1)
     }
     .timegraph {
-        transform:scale(1.14)
+        transform:scale(1.13)
     }
     /* SKILLS CONTENT*/
     .skillscontent{
-        transform: scale(1.15);
         top:40px;
     }
     .neon{
@@ -954,9 +980,16 @@ textarea:valid~label{
         top:-50px;
     }
 
+    .contentmain{
+        max-width: 350px;
+    }
+    .skillsheader{
+        font-size: 28px;
+    }
+
     /*modal box bigger */
     .contentbox{
-        transform: scale(0.8);
+        transform: scale(0.7);
     }   
 
 }
