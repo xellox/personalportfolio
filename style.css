@@ -906,7 +906,7 @@ textarea:valid~label{
 
     }
     .skillsheader{
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
     }
     .skillscontent{
@@ -989,7 +989,7 @@ textarea:valid~label{
 
     /*modal box bigger */
     .contentbox{
-        transform: scale(0.7);
+        transform: scale(0.77);
     }   
 
 }
