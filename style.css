@@ -12,7 +12,12 @@ body{
 }
 
 main{
-    display:block;
+    display:flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    margin-left:150px;
 }
 input,
 textarea,
@@ -21,6 +26,9 @@ select,
 a {
     -webkit-tap-highlight-color: transparent;
 }
+a{
+    text-decoration: none;
+} 
 
     /* TRANSITION FOR PAGES */
 .transition {
@@ -47,7 +55,6 @@ a {
     align-items: center;
     justify-content: center;
     writing-mode: vertical-lr;
-    max-height: 100%;
     height: 100%;
     width:50px;
     position: fixed;
@@ -62,13 +69,11 @@ a {
 }   
 
 i {
-    text-decoration: none;
     color:rgb(53, 53, 53);
 }
 
 i:hover {
     color:rgb(0, 255, 183);
-    text-decoration: none;
 }
 
     /* Contact me button */
@@ -93,11 +98,9 @@ i:hover {
  /* header section */
 .text {
     color:white;
-    max-width:370px;
-    min-width:370px;
-    min-height:100px;
+    width:fit-content;
     pointer-events: none;
-    margin:17% auto auto  11%;
+    
     }
 
 .header {
@@ -114,7 +117,6 @@ i:hover {
     animation-iteration-count: 1;
     animation-delay: 4.3s;
     animation-direction:alternate;
-    pointer-events: all;
 }
 
 .excl::after{
@@ -176,30 +178,26 @@ i:hover {
 /
 
 /* TIMELINE TEXT BOX */
-.timeline {
-    width: fit-content;
-    margin:200px 0 0 10%;
-}
 
+.timeline{
+    padding: 15px;
+}
 .contentinline {
-    display: flex;
-    width:fit-content;
+  display:inline-flex;
 }
 
 #clock{
     color:rgb(232, 232, 232);
     font-size: 27px;
-    display:inline-flex;
-    position:relative;
-    margin:11px 0 0 10px;
-    width:fit-content;
+    align-items: center;
+    display:flex;
+    margin-left:10px;
+
 
 }
 
 .timelinetext {
     font-size:32px;
-    display:flex;
-    position:relative;
     letter-spacing: 2px;
     color: turquoise;
 }
@@ -208,11 +206,8 @@ i:hover {
     font-size:18px;
     line-height: 22px;
     max-width: 750px;
-    display:flex;
-    position:relative;
     letter-spacing: 2px;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0 30px 0;
     color: rgb(255, 255, 255);
 }
 
@@ -221,7 +216,6 @@ i:hover {
 .timegraph{
     display:flex;
     position: relative ;
-    min-width:590px;
     top:100px;
     user-select: none;
     -moz-user-select: none;
@@ -235,26 +229,23 @@ i:hover {
     width:160px;
     color:white;
     list-style-type: none;
-    pointer-events: none;
     display:inline-flex;
+    padding: 5px;
 }
 
 .timeline1 {
     border-top: 4px solid rgb(18, 216, 255);
     margin:0 0 0 3px;
-    padding: 5px;
 }
 
 .timeline2 {
     border-top: 6px solid rgb(255, 75, 222);
-    padding:5px;
     margin:-3px 0 0 3px;
 }
 
 .timeline3 {
     gap:100px;
     border-top: 8px solid rgb(255, 31, 31);
-    padding:5px;
     margin:-6px 0 0 3px;
 }
 
@@ -277,8 +268,6 @@ i:hover {
 
 .aboveborder{
     height: 10px;
-    justify-content: center;
-    align-items: center;
     display:flex;
     position:absolute;
     border-top: 1px solid whitesmoke;
@@ -291,7 +280,7 @@ i:hover {
 .firstborder{
     margin-top:-55px;
     margin-left: -166px;
-    width:485px;
+    width:483px;
 }
 
 .secondborder {
@@ -302,15 +291,13 @@ i:hover {
 
     /* SKILLS PAGE */
 
-/*positioning*/
-.skillscontent{
-    position: relative;
-    margin:225px 0 0 10%;
+.contentmain{
+    padding:15px;
+    margin:0;
+    width:fit-content
 }
-
 .skillstext{
-    display:flex;
-    max-width:750px;
+    max-width: 750px;;
     color:white;
     letter-spacing: 2px;
     line-height: 22px;
@@ -321,8 +308,8 @@ i:hover {
 .skillsheader{
     display:flex;
     position:relative;
-    margin:0 0 50px 0;
-    font-size: 45px;
+    margin:0 0 30px 0;
+    font-size: 38px;
     color:rgb(0, 255, 183);
     letter-spacing: 1px;
     text-transform:uppercase;
@@ -352,43 +339,23 @@ i:hover {
 }
 
 /* neonbar animtion */
-.neon {
-    display:flex;
-    position: fixed;
-    width:5px;
-    border-radius: 50px;
-    height:500px;
-    top:100px;
-    background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209, 247, 241, 0.734) 0%, rgba(249, 213, 213, 0.778) 81% );
-    left:1100px;
-    box-shadow: 0px 0px 15px 7px rgb(255, 0, 106) ;
-    animation-name:neonbar;
-    animation-duration: 4.5s;
-    animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
-    animation-timing-function:ease-in-out;
-    z-index: -1;
+
+.skillsMain{
+    overflow: hidden;
 }
 
-@keyframes neonbar {
-    0% {
-
-    }
-    50% {
-        transform: rotate(180deg);
-        margin-top: -50px;
-        margin-left:-100px;
-    }
-    75%{
-        transform: rotate(270deg);
-        margin-top:50px;
-        margin-left:0;
-    }
-    100% {
-        transform: rotate(359deg);
-        margin-top:100px;
-        margin-left:100px;
-    }
+.neon {
+    display: flex;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    width:5px;
+    border-radius: 50px;
+    height:2000px;
+    background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209, 247, 241, 0.734) 0%, rgba(249, 213, 213, 0.778) 81% );
+    box-shadow: 0px 0px 15px 7px rgb(255, 0, 106) ;
+    transform: rotate(-45deg);
+    z-index: -1;
 }
 
 /* PROJECTS SECTION */
@@ -399,7 +366,6 @@ i:hover {
     justify-content: center;
     align-items: center;
     margin: 0 0 0 50px;
-
 }
 
 .prjhead{
@@ -432,11 +398,14 @@ i:hover {
 
 .grid-itemp {
      background-color: rgb(33, 33, 33);
-     min-width:250px;
+     width:250px;
      height: 300px;
      border:1px solid rgb(18, 18, 18);
      border-radius: 4px;
      box-shadow: 10px 10px 10px 0px rgb(2, 2, 2);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
 }
 
 /* Containers content pop up */
@@ -446,7 +415,6 @@ i:hover {
     overflow: scroll;
     overflow-x:hidden;
     top:100px;
-    display:block;
     position:absolute;
     animation-name: "enlarge";
     animation-duration: 220ms;
@@ -467,27 +435,6 @@ i:hover {
 
 .contentbox::-webkit-scrollbar-thumb{
     background-color: rgb(255, 0, 106);
-}
-
-#firstContentDiv {
-    display:none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#secondContentDiv {
-    display:none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#thirdContentDiv{
-    display:none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .greybg {
@@ -514,6 +461,13 @@ i:hover {
     }
 }
 
+#firstContentDiv, #secondContentDiv, #thirdContentDiv {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .contentText1, .contentText2, .contentText3 {
     letter-spacing: 2px;
     font-size: 17px;
@@ -521,42 +475,30 @@ i:hover {
     color: #EBF2FA;
 }
 
-.contentImage1 {
+.contentImage1, .contentImage2, .contentImage3 {
     width:390px;
     height:120%;
     display:flex;
     position:relative;
     margin:auto auto 80px auto;
     top:40px;
-    background-image: url('dog-site-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border:1px solid black;
 }
 
+.contentImage1{
+    height:120%;
+    background-image: url('dog-site-min.jpg');
+}
+
 .contentImage2{
     background-image: url('to-do app-min.jpg');
-    width:390px;
     height:390px;
-    display:flex;
-    position:relative;
-    margin:auto auto 80px auto;
-    top:40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border:1px solid black;
 }
 .contentImage3{
     background-image: url('weatherapp2.jpg');
-    width:390px;
-    height:450px;
-    display:flex;
-    position:relative;
-    margin:auto auto 80px auto;
-    top:40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border:1px solid black;
+    height:450px; 
 }
 
 .contentImage1:hover, .contentImage2:hover, .contentImage3:hover {
@@ -591,24 +533,14 @@ i:hover {
 /* Container background image */
 .first-grid {
     background-image: url('doggoedit-min.jpg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat
 }
 
 .second-grid {
     background-image: url('to-do\ apppreview.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
 }
 
 .third-grid{
     background-image: url('weatherapp.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .grid-itemp:hover {
@@ -644,24 +576,11 @@ i:hover {
 .dark:not(:hover) {
     transition: opacity 0.2s ease-in-out;
 }
-
-a{
-    text-decoration: none;
-} 
-
 /* CONTACT PAGE */
 
 /* FORMS */
-.contentform{
-    display:flex;
-    position:relative;
-    max-width:600px;
-    margin: 12% 0 0 10%;
-    
-}
-
 form {
- width: 90%;
+ width:550px;
  max-width: 600px;
 }
 
@@ -672,7 +591,7 @@ form {
 
 input, textarea {
     border-radius: 3px;
-    width:100%;
+    width: 100%;
     outline:0;
     padding:10px;
     border:1px solid #fff;
@@ -742,20 +661,17 @@ textarea:valid~label{
 }
 
 .formheader{
-    position: absolute;
-    top:-70px;
+    margin:0px 0 30px 0;
     font-size: 37px;
     color:rgb(0, 255, 183);
     text-shadow: 2px 2px rgb(255, 0, 106);
     letter-spacing: 1px;
     line-height: 45px;
-    pointer-events: none;
 }
 
 .contactdirectly{
-    display:inline-flex;
-    position:absolute;
-    bottom: -70px;
+    display:flex;
+    margin-top:10px;
     font-size: 17px;
     color:rgb(0, 255, 183);
     letter-spacing: 2px;
@@ -777,16 +693,14 @@ textarea:valid~label{
 @media (max-width:600px) {
 /*GENERAL SETTINGS */
     main{
-        display:flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
+       display:flex;
+       align-items: start;
+       justify-content: center;
+       margin:100px auto auto auto;
     }
 
     html, body {
         overflow-x: hidden;
-        height: 100vh;
-        
     }
 /* horizontal navbar */
     .navbar{
@@ -799,14 +713,12 @@ textarea:valid~label{
         box-shadow: 0 1px 10px 0 black;
     }
 /*first page */
+    .text{
+    margin-top:50px;
+    }
     .header{
         font-size:36px;
         line-height: 31px;
-    }
-
-    .text {
-        margin-top:120px;
-        
     }
 
     .contact{
@@ -814,7 +726,7 @@ textarea:valid~label{
         max-width:100px;
     }
     .expertise {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     .lightanimation {
@@ -829,8 +741,10 @@ textarea:valid~label{
 
     .timegraph{
         min-width:300px;
-        transform: scale(1.1);
-        left:13px;
+        transform:scale(1.1);
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .tim{
@@ -871,55 +785,48 @@ textarea:valid~label{
     /* About me content */
 
     .timeline {
-         margin:120px auto;
-         max-width: 310px;
+         width:fit-content;
         }
 
     #clock{
         font-size: 23px; 
-        margin:7px 0 0 8px;   
     }
 
 
     .timelinetext {
         font-size:25px;
-        margin:auto; 
     }
 
     .timelinetextcontent {
         font-size:13px;
-        max-width:310px;
         letter-spacing: 1px;
-        margin:30px auto auto auto;
+        margin:15px auto auto auto;
     }
     /* SKILLS PAGE */
-    .neon{
-        animation:none;
-        transform: rotate(135deg);
-        top:-100px;
-        left:280px;
-        
-    }
+
     .skillstext{
         font-size: 13px;
         letter-spacing: 1px;
 
     }
     .skillsheader{
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 20px;
     }
-    .skillscontent{
-    margin:100px auto;
-    max-width:310px;
+
+    .neon{
+      position: fixed;
+      top:-700px;
+      right: 0;  
     }
+
     /* contact page */
-    .contentform{
-        top:100px;
+    form{
+       max-width: 270px;
     }
+ 
     .formheader{
         font-size: 23px;
-        top:-70px;
     }
 
     label{
@@ -943,7 +850,7 @@ textarea:valid~label{
     }
     
     .contentbox{
-        transform: scale(0.6);
+        transform: scale(0.68);
         top:20px;
     }   
 }
@@ -953,8 +860,7 @@ textarea:valid~label{
 {   
     /*FIRST PAGE */
     .text{
-            margin-top:165px;
-            transform: scale(1.15);
+            transform: scale(1.1);
         }
     /* navbar bigger screen */
     .navbar{
@@ -965,24 +871,10 @@ textarea:valid~label{
         }
 
     /* TIME GRAPH */
-    .timeline{
-        transform:scale(1.1)
-    }
     .timegraph {
-        transform:scale(1.13)
+        transform:scale(1.2)
     }
     /* SKILLS CONTENT*/
-    .skillscontent{
-        top:40px;
-    }
-    .neon{
-        left:350px;
-        top:-50px;
-    }
-
-    .contentmain{
-        max-width: 350px;
-    }
     .skillsheader{
         font-size: 28px;
     }
@@ -991,6 +883,10 @@ textarea:valid~label{
     .contentbox{
         transform: scale(0.77);
     }   
+    
+    form{
+        min-width:330px;
+    }
 
 }
 
