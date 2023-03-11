@@ -581,7 +581,7 @@ i:hover {
 /* FORMS */
 form {
  width:550px;
- max-width: 600px;
+ min-width: 270px;
 }
 
 .input-group{
@@ -696,7 +696,7 @@ textarea:valid~label{
        display:flex;
        align-items: start;
        justify-content: center;
-       margin:100px auto auto auto;
+       margin:auto;
     }
 
     html, body {
@@ -714,7 +714,7 @@ textarea:valid~label{
     }
 /*first page */
     .text{
-    margin-top:50px;
+    margin-top:150px;
     }
     .header{
         font-size:36px;
@@ -786,6 +786,7 @@ textarea:valid~label{
 
     .timeline {
          width:fit-content;
+         margin-top: 100px;
         }
 
     #clock{
@@ -803,11 +804,12 @@ textarea:valid~label{
         margin:15px auto auto auto;
     }
     /* SKILLS PAGE */
-
+    .skillscontent{
+        margin-top: 100px;
+    }
     .skillstext{
         font-size: 13px;
         letter-spacing: 1px;
-
     }
     .skillsheader{
     font-size: 26px;
@@ -821,8 +823,11 @@ textarea:valid~label{
     }
 
     /* contact page */
+    .contentform {
+        margin-top:100px;
+    }
     form{
-       max-width: 270px;
+        width: 270px;
     }
  
     .formheader{
@@ -885,7 +890,7 @@ textarea:valid~label{
     }   
     
     form{
-        min-width:330px;
+        width:330px;
     }
 
 }
