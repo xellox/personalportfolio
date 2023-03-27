@@ -30,6 +30,10 @@ a{
     text-decoration: none;
 } 
 
+a:hover{
+    color:#e10040
+}
+
     /* TRANSITION FOR PAGES */
 .transition {
     animation-name:transitionpage;
@@ -461,30 +465,31 @@ i:hover {
     }
 }
 
-#firstContentDiv, #secondContentDiv, #thirdContentDiv {
+#firstContentDiv, #secondContentDiv, #thirdContentDiv, #fourthContentDiv, #fifthContentDiv,
+#sixthContentDiv {
     display:none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contentText1, .contentText2, .contentText3 {
+.context {
+    padding:5px;
     letter-spacing: 2px;
     font-size: 17px;
     margin:15px 0 0 0;
     color: #EBF2FA;
 }
 
-.contentImage1, .contentImage2, .contentImage3 {
+.image {
     width:390px;
-    height:120%;
     display:flex;
     position:relative;
     margin:auto auto 80px auto;
     top:40px;
     background-repeat: no-repeat;
     background-size: cover;
-    border:1px solid black;
+    border-radius: 5px;
 }
 
 .contentImage1{
@@ -501,12 +506,27 @@ i:hover {
     height:450px; 
 }
 
-.contentImage1:hover, .contentImage2:hover, .contentImage3:hover {
+.contentImage4 {
+    background-image: url('keyEvent.jpg');
+    height: 350px;
+    background-size:contain;
+}
+
+.contentImage5 {
+
+}
+
+.contentImage6 {
+    background-image: url('randomPrev.jpg');
+    height: 400px;
+}
+
+.image:hover {
     transform:scale(1.08);
     transition: all 0.15s ease-in-out;
 }
 
-.contentImage1:not(:hover), .contentImage2:not(:hover), .contentImage3:not(:hover){
+.image:not(:hover){
     transform:scale(1);
     transition: all 0.15s ease-in-out;
 }
@@ -536,11 +556,24 @@ i:hover {
 }
 
 .second-grid {
-    background-image: url('to-do\ apppreview.jpg');
+    background-image: url('to-do apppreview.jpg');
 }
 
 .third-grid{
     background-image: url('weatherapp.jpg');
+}
+
+.fourth-grid{
+    background-image: url('keyCode.jpg');
+    
+}
+
+.fifth-grid {
+    background-image: url('soundboard.jpg');
+}
+
+.sixth-grid {
+    background-image: url('random.jpg')
 }
 
 .grid-itemp:hover {

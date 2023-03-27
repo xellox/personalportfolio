@@ -1,6 +1,9 @@
 const show = document.getElementById('firstContentDiv');
 const show2 = document.getElementById('secondContentDiv')
 const show3 = document.getElementById('thirdContentDiv')
+const show4 = document.getElementById('fourthContentDiv')
+const show5 = document.getElementById('fifthContentDiv')
+const show6 = document.getElementById('sixthContentDiv')
 const fname = document.getElementById('name');
 const email = document.getElementById('email');
 const social = document.getElementById('social');
@@ -28,6 +31,30 @@ function showDiv3() {
 
  function closeDiv3() {
     show3.style.display = 'none';
+}
+
+function showDiv4() {
+    show4.style.display = 'flex'
+}
+
+function closeDiv4() {
+    show4.style.display = 'none'
+}
+
+function showDiv5() {
+    show5.style.display = 'flex'
+}
+
+function closeDiv5() {
+    show5.style.display = 'none'
+}
+
+function showDiv6() {
+    show6.style.display = 'flex'
+}
+
+function closeDiv6() {
+    show6.style.display = 'none'
 }
 
 
