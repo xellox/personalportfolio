@@ -479,30 +479,32 @@ i:hover {
 
 .contentImage1{
     height:120%;
-    background-image: url('dog-site-min.jpg');
+    background-image: url('images/dog-site-min.jpg');
 }
 
 .contentImage2{
-    background-image: url('to-do app-min.jpg');
+    background-image: url('images/to-do app-min.jpg');
     height:390px;
 }
 .contentImage3{
-    background-image: url('weatherapp2.jpg');
+    background-image: url('images/weatherapp2.jpg');
     height:450px; 
 }
 
 .contentImage4 {
-    background-image: url('keyEvent.jpg');
+    background-image: url('images/keyEvent.jpg');
     height: 350px;
     background-size:contain;
 }
 
 .contentImage5 {
-
+    background-image: url('images/soundboard2.jpg');
+    background-size: cover;
+    height: 520px;
 }
 
 .contentImage6 {
-    background-image: url('randomPrev.jpg');
+    background-image: url('images/randomPrev.jpg');
     height: 400px;
 }
 
@@ -537,28 +539,28 @@ i:hover {
 
 /* Container background image */
 .first-grid {
-    background-image: url('doggoedit-min.jpg');
+    background-image: url('images/doggoedit-min.jpg');
 }
 
 .second-grid {
-    background-image: url('to-do apppreview.jpg');
+    background-image: url('images/to-do apppreview.jpg');
 }
 
 .third-grid{
-    background-image: url('weatherapp.jpg');
+    background-image: url('images/weatherapp.jpg');
 }
 
 .fourth-grid{
-    background-image: url('keyCode.jpg');
+    background-image: url('images/keyCode.jpg');
     
 }
 
 .fifth-grid {
-    background-image: url('soundboard.jpg');
+    background-image: url('images/soundboard.jpg');
 }
 
 .sixth-grid {
-    background-image: url('random.jpg')
+    background-image: url('images/random.jpg')
 }
 
 .grid-itemp:hover {
